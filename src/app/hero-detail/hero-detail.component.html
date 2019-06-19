@@ -1,12 +1,24 @@
 <div *ngIf="selectedHero">
-    <h2>Hero's Details: {{selectedHero.name|uppercase}}</h2>
-    <div>
-      <span>id: </span>{{selectedHero.id}}
-    </div>
-    <div>
-      <span>name: </span>{{selectedHero.name}}
-    </div>
-    <div>
-      <label>Name: <input [(ngModel)]="selectedHero.name" placeholder="name"/></label>
-    </div>
+  <h2>Hero's Details: {{selectedHero.name|uppercase}}</h2>
+  <div>
+    <span>id: </span>{{selectedHero.id}}
   </div>
+  <div>
+    <span>name: </span>{{selectedHero.name}}
+  </div>
+  <div>
+    <label>Name: <input [(ngModel)]="selectedHero.name" placeholder="name"/></label>
+  </div>
+</div>
+<div *ngIf="routedHero">
+  <h2>Hero's Details: {{routedHero.name|uppercase}}</h2>
+  <div>
+    <span>id: </span>{{routedHero.id}}
+  </div>
+  <div>
+    <span>name: </span>{{routedHero.name}}
+  </div>
+  <div>
+    <label>Name: <input [(ngModel)]="routedHero.name" placeholder="name"/></label>
+  </div>
+</div>
